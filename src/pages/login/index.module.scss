@@ -1,0 +1,62 @@
+.wrap{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.left{
+  width: 50%;
+  height: 100%;
+}
+.right{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  width: 370px;
+  padding: 36px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.08);
+
+  button {
+    width: 100%;
+    background-color: #094A80;
+  }
+
+  p {
+    width: 100%;
+    color: #0666A9;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 12px;
+  }
+}
+
+.logo {
+  cursor: pointer;
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+.anticon svg{
+  width: 20px;
+  height: 20px;
+}
+.ant-spin-container,
+.ant-spin-nested-loading {
+  height: 100%;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+:global {
+  .ant-col {
+    width: 100%;
+  }
+}

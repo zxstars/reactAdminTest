@@ -1,0 +1,125 @@
+
+/* 布局左侧 */
+.logo, .logo-light{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+}
+
+.logo-light{
+    box-shadow: 0 1px 9px -3px rgba(0,0,0,.2)
+}
+
+.logo img, .logo-light img {
+    width: 36px;
+}
+
+.logo h1 {
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 64px;
+    color: #FFF;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.logo-light h1{
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 64px;
+    color: #001529;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.menuContainer{
+    height: calc(100vh - 130px);
+    overflow-x: hidden;
+    flex: 1 1;
+    margin-top: 10px;
+}
+
+.switchTheme {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.switchTheme span:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    color: #666;
+}
+
+/* 布局右侧头部 */
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    color: #001529;
+    float: left;
+}
+
+.trigger-dark{
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    color:rgba(255, 255, 255, 0.65);
+    float: left;
+}
+  
+.trigger:hover,.trigger-dark:hover{
+    transition: 0.1s;
+    color: #1890ff;
+    background-color: rgb(24, 144, 255, 0.1);
+}
+
+.site-layout .site-layout-background {
+    background: #FFF;
+}
+
+.ant-dropdown-link{
+    color: #1890ff;
+}
+
+.ant-dropdown-link:hover{
+    cursor: pointer;
+}
+
+/* 标签页 */
+.ant-tabs-top > .ant-tabs-nav{
+    margin: 0;
+}
+
+.ant-tabs-tab .anticon {
+    margin-right: 2px;
+}
+
+.ant-tabs-tab-remove {
+    margin-left: 0;
+}
+.hoverMenu{
+  color:#1890ff !important;
+}
+.hoverMenuu{
+  color:#1890ff !important;
+}
+

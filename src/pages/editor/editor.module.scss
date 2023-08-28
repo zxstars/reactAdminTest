@@ -1,0 +1,811 @@
+// antd样式调整
+:global(.ant-steps-item-process .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot){
+  background: #111111 !important;
+}
+:global(.ant-steps-icon-dot){
+  width: 8px !important;
+  height: 8px !important;
+}
+:global(.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title),
+:global(.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title){
+  font-family: "Noto IKEA Simplified Chinese";
+  font-style: normal;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  color: #111111 !important;
+}
+:global(.ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title) {
+  font-size: 14px !important;
+  
+}
+:global(.ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon .ant-steps-icon-dot){
+  background: #111111 !important;
+}
+:global(.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after){
+  background-color: #111111 !important;
+}
+:global(.ant-card-body){
+  padding: 7px !important;
+}
+:global(.ant-steps) {
+  justify-content: space-around !important;
+}
+:global{
+  // tabs 蓝线
+  .ant-tabs-ink-bar {
+    visibility: hidden;
+  }
+
+}
+
+// 通用的margin样式
+.normal-margin {
+  margin: 45px 0 45px 30px;
+}
+
+// 通用的ant样式修改
+.normal-btn {
+  background: #111111;
+  border-radius: 27.5px;
+  color: #FFFFFF;
+}
+.active{
+  border: 1px solid #111111 !important;
+}
+.disabled {
+  background: #DFDFDF;
+  cursor:not-allowed;
+}
+.point-active {
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+
+// :global{
+//   .btn {
+//     .ant-btn:active{
+//       border-color: #DFDFDF !important;
+//     }
+//   }
+// }
+
+// :global(.ant-select-selector:focus) {
+//   border-color: none !important;
+// }
+// :global(.ant-select-selection) {
+//   border: none !important;
+//   box-shadow: none !important;
+// }
+
+// :global(.ant-select-selector) {
+//   border: 0 !important;
+//   // 删除蓝色边框
+//   border-color: transparent !important;
+//   box-shadow: none !important;
+//   // 保留下边框
+//   border-bottom: 1px solid #929292 !important;
+// }
+
+
+/*
+* 布局样式
+*/
+.layout {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.content-canvas {
+  flex:6;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  /* background: url('../../../../assets/cc.svg') no-repeat top left;
+  background-size: 100% 100%; */
+	/* background-size: cover; */
+  /* min-width: 1000px; */
+    /* min-height: 1000px; */
+  /* overflow: scroll; */
+  /* background: url('../../../../assets/grid.svg');
+  background-size: 800px 800px; */
+  background: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 53px;
+  overflow: auto;
+}
+
+.menu {
+  // flex:1;
+  width: 350px;
+  // height: 100%;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  padding-top: 10px;
+  box-shadow: -4px 0px 116px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+
+/*
+* 画布样式
+*/
+.layout-countent {
+  :global{
+    // spin Loading
+    .ant-spin-nested-loading,.ant-spin-blur,.ant-spin-container {
+      height: 100% !important;
+    }
+  }
+}
+.logSpan {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.zoom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 56px;
+  line-height: 56px;
+  z-index: 888;
+  .btn:nth-child(1) {
+    height: 40px;
+    width: 60px;
+    background: #DFDFDF !important;
+    border-radius: 100px 0 0 100px !important;
+    border: none;
+  }
+  .btn:nth-child(2) {
+    height: 40px;
+    width: 60px;
+    background: #DFDFDF !important;
+    border-radius: 0 100px 100px 0 !important;
+    border: none;
+  }
+  .btnOpera:nth-child(1) {
+    height: 56px;
+    width: 84px;
+    background: #111111 !important;
+    border-radius: 100px 0 0 100px !important;
+    border: none;
+  }
+  .btnOpera:nth-child(2) {
+    height: 56px;
+    width: 84px;
+    background: #111111 !important;
+    border-radius: 0 100px 100px 0 !important;
+    border: none;
+  }
+}
+
+.canvas{
+  // position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img:nth-of-type(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    // width: 1100px;
+    // height: 48px;
+  }
+  img:nth-of-type(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    // height: 485px;
+    // width: 160px;
+  }
+  img:nth-of-type(3){
+    position: absolute;
+    top: 429px;
+    left: 0;
+  }
+  img:nth-of-type(4){
+    position: absolute;
+    // right: 37px;
+    left:820px
+  }
+}
+.canvas-detail{
+  width: 680px;
+  height: 380px;
+  position: absolute;
+  top: 50px;
+  left: 140px;
+  background: url('../../assets//editor/grid.svg');
+  background-size: 680px 380px;
+}
+.canvas-layouts {
+  width: 960px;
+  height: 550px;
+  position: relative;
+  min-width: 960x;
+  transform-origin: 600px 450px;
+}
+.maxZindex {
+  z-index: 9999 !important;
+}
+.cabinet-select {
+  border: 1px solid #111111;
+  box-sizing: border-box;
+  // box-sizing: content-box;
+}
+
+
+
+/*
+* 菜单栏样式
+*/
+.steps-content {
+  min-height: 200px;
+  // height: calc(100% - 180px);
+  // height: 530px;
+  height: calc(100% - 185px);
+  padding: 40px 24px 0 24px;
+  border-radius: 2px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+.step-title {
+  display: block;
+  font-family: "Noto IKEA Simplified Chinese";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 37px;
+  margin-bottom: 40px;
+  color: #000000;
+}
+.step-descript-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #111111;
+}
+.cabinet-design-form {
+  :global{
+    .ant-form-item-label{
+      label {
+        color: #111111;
+        font-family: "Noto IKEA Simplified Chinese";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    .ant-form-item {
+      margin-bottom: 60px;
+    }
+  }
+  :global(.ant-select-selection) {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  :global(.ant-select-selector) {
+    border: 0 !important;
+    // 删除蓝色边框
+    border-color: transparent !important;
+    box-shadow: none !important;
+    // 保留下边框
+    border-bottom: 1px solid #929292 !important;
+  }
+}
+.cabinet-design-first-color {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #DFDFDF;
+}
+.cabinet-design-first-span {
+  display: inline-block;
+  vertical-align: top;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+  margin-left: 16px;
+}
+
+
+
+.steps-action {
+  margin: 24px;
+  .first-next-step-btn {
+    height: 56px;
+    width: 307px;
+  }
+}
+
+
+// addStruct
+.addStruct-title{
+  display: block;
+  font-family: "Noto IKEA Simplified Chinese";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 40px;
+  color: #111111;
+}
+.first-next-step-btn {
+  height: 40px;
+  &:focus{
+    background: #111111;
+  }
+  &:hover{
+    background: #111111;
+  }
+}
+
+.addstruct-content {
+  margin-top: 46px;
+  .addstruct-conten-title {
+    font-family: Noto IKEA Simplified Chinese;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #111111;
+    margin-bottom: 28px;
+    display: inline-block;
+  }
+
+  .addstruct-type {
+    width: 84px;
+    height: 40px;
+    color: #111111;
+    background: #F5F5F5;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 28px;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+    &:focus,&:active{
+      border: 1px solid #111111;
+    }
+    span {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      // margin: 12px 24px;
+
+    }
+  
+  }
+  // .addstruct-type:first-child{
+  //   width: 108px !important;
+  // }
+  :global{
+    .ant-tabs-tab + .ant-tabs-tab {
+      margin: 0 0 0 10px !important;
+    }
+    .ant-tabs-nav-list .ant-tabs-tab:nth-child(3){
+      .ant-btn{
+        width: 108px !important;
+      }
+    }
+    .ant-btn:active{
+      border-color: #F5F5F5 !important;
+    }
+    .ant-tabs-content-holder {
+      width: 300px;
+      margin-top: 12px;
+    }
+    .ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before{
+      border-bottom:none;
+    }
+    .ant-card{
+      height: 80px;
+      width: 80px;
+    }
+    .ant-card-body {
+      height: 80px;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+
+@media screen and(max-height: 800px) {
+  .step-two-content {
+    height: calc(100% - 191px) !important;
+    
+  }
+}
+// 步骤二样式
+.step-two-content {
+  // min-height: 400px;
+  width: 380px;
+  // overflow-y: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100% - 352px);
+  .step-two-content-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #767676;
+    background: #FFFFFF;
+    opacity: 0.7;
+    box-shadow: -4px 0px 116px rgba(0, 0, 0, 0.1);
+  }
+  :global{
+    .ant-list{
+      width: 340px;
+    }
+    .ant-card-contain-grid:not(.ant-card-loading) .ant-card-body{
+      margin: -1px 0 0 1px;
+    }
+    .ant-list:nth-child(n+2){
+      margin-top: 20px;
+    }
+    .ant-card-body{
+      // display: flex;
+      // justify-content: space-between;
+      .ant-card-grid{
+        margin-right: 24px;
+      }
+      .ant-card-grid:nth-child(3n){
+        margin-right: 0px;
+      }
+      padding: 0 !important;
+      &::before{
+        display: none;
+      }
+    }
+    .ant-card-grid{
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+  }
+}
+
+.second-step-door-defalut {
+  opacity: 0.2;
+  cursor: not-allowed !important;
+}
+.second-step-door-ok {
+  margin-top: 24px;
+  float: right;
+  width: 102px;
+  height: 40px;
+  margin-right: 15px;
+}
+.second-step-door-next {
+  margin-top: 124px;
+  float: right;
+  opacity: 0.2;
+  margin-right: 15px;
+  span {
+    vertical-align: middle;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: #111111;
+    margin-right: 10px;
+  }
+}
+
+.step-two-colorParts-content {
+  height: calc(100% - 110px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 380px;
+  :global{
+    // .ant-list{
+      // width: 340px;
+    // }
+    .ant-list{
+      .ant-card-grid:nth-child(1){
+        img{
+          width: 25px !important;
+          height: 25px !important;
+        }
+      }
+    }
+    .ant-list:nth-child(1){
+      margin-top: 28px;
+      // .ant-card-grid{
+      //   margin: 0px;
+      // }
+    }
+    .ant-card-body{
+      .ant-card-grid{
+        margin-right: 24px;
+        margin-bottom: 16px;
+        cursor: pointer;
+      }
+      .ant-card-grid:nth-child(3n){
+        margin-right: 0px;
+      }
+      &::before{
+        display: none;
+      }
+    }
+    .ant-card-grid{
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .step-two-colorParts-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #111111;
+  }
+}
+
+// 第三步样式
+.step-three-wrapper{
+  height: calc(100% - 15px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 340px;
+  padding-right: 30px;
+}
+
+.step-three-tv-content{
+  margin-top: 25px;
+  :global{
+    span.ant-radio + *{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #484848;
+      padding-left: 16px !important;
+    }
+    .ant-radio-checked .ant-radio-inner{
+      border-color: #111111;
+    }
+    .ant-radio-wrapper:hover .ant-radio-inner, .ant-radio-input:focus + .ant-radio-inner{
+      border: 1px solid #111111 !important;
+    }
+    .ant-radio-inner::after{
+      background-color: #111111;
+    }
+  }
+}
+.step-three-tv-form {
+  margin-top: 25px;
+  :global{
+    .ant-form-item-label{
+      label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: #111111;
+      }
+    }
+  }
+}
+
+// 商品清单
+.last-commodity-list-wrapper {
+  :global{
+    .ant-drawer-wrapper-body{
+      min-width: 1400px;
+      overflow: auto;
+    }
+    .ant-drawer-header ,.ant-drawer-body{
+      padding: 16px 64px !important;
+      border-bottom: none;
+    }
+    // spin Loading
+    .ant-spin-nested-loading,.ant-spin-blur,.ant-spin-container {
+      height: 100% !important;
+    }
+    .ant-spin-nested-loading > div > .ant-spin {
+      top: 15% !important;
+    }
+    
+  }
+  .last-commodity-list-title-logo {
+    margin-bottom: 79px;
+  }
+  .last-commodity-list-detail {
+    display: flex;
+    width: 100%;
+    height: 163px;
+    overflow-y: auto;
+    img[alt="commodityImg"] {
+      width: 100px;
+      height: 100px;
+    }
+
+    .last-commodity-list-detail-info {
+      // flex-grow: 2;
+      width: 290px;
+      margin-left: 24px;
+
+      // text-align: center;
+      .detail-info-title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+        color: #111111;
+      }
+      .detail-info-content {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #484848;
+        margin-bottom: 2px;
+      }
+      .detail-info-content:nth-child(3) {
+        margin-bottom: 10px;
+      }
+      .detail-info-code {
+        width: 98px;
+        background: #111111;
+        font-size: 14px;
+        line-height: 20px;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+    .last-commodity-list-detail-count {
+      flex-grow: 3;
+      text-align: center;
+      .detail-info-content {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #484848;
+        margin-bottom: 2px;
+      }
+      .detail-count{
+        display: block;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 32px;
+        color: #111111;
+      }
+    }
+    .last-commodity-list-detail-price {
+      flex-grow: 3;
+      text-align: center;
+      padding-top: 30px;
+      .detail-price {
+        font-size: 18px;
+        line-height: 21px;
+        text-align: right;
+        font-weight: bold;
+        color: #111111;
+      }
+    }
+  }
+}
+.last-commodity-list-content {
+  display: flex;
+  height: 100%;
+  :global{
+    .ant-list {
+      flex-grow: 6;
+      border-right: 1px solid #DFDFDF;
+      overflow-y: auto;
+    }
+  }
+  .last-commodity-list-content-show {
+    // flex-grow: 4;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    .content-show-title{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      color: #111111;
+      margin-top: 33px;
+    }
+    .content-show-descript{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #111111;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      margin-top: 4px;
+    }
+    .content-show-price{
+      font-size: 32px;
+      line-height: 24px;
+      color: #111111;
+      flex: none;
+      order: 1;
+      align-self: center;
+      flex-grow: 0;
+      margin-bottom: 38px;
+      font-weight: bold;
+      margin-top: 20px;
+      span:nth-child(1){
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: -10px;
+        text-align: right;
+        color: #111111;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      span:nth-child(3){
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: -10px;
+        text-align: right;
+        color: #111111;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      span:nth-child(2){
+        font-size: 32px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        color: #111111;
+      }
+    }
+  }
+  
+}
+
+.last-commodity-list-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+  span{
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+}
+
+.saveImgStyle {
+  width: 460px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img[alt='mccImg']{
+    // width: 100%;
+    max-height: 100%;
+    max-width: 460px;
+  }
+}

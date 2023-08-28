@@ -1,0 +1,93 @@
+.heard{
+  display: flex;
+  width: 100%;
+}
+.category{
+  width: 10rem;
+}
+.label{
+  margin-left: 0;
+}
+
+.type{
+  //margin-left: .3125rem;
+}
+.dark{
+  background-color: #d9d9d9!important;
+}
+
+.tagStyle{
+  cursor:pointer;
+}
+.darrk{
+  background-color: #d9d9d9!important;
+}
+.image{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.addInterior{
+  margin-top: 1.625em;
+}
+.ant-col{
+  width: auto;
+}
+.download{
+  display: flex;
+  margin-left: 18px;
+  height: 56px;
+  button:nth-child(n+2){
+    margin-left: 12px;
+  }
+}
+.tagStyle{
+  cursor:pointer;
+}
+.iconBtn{
+  border: 0;
+}
+.btn3d{
+  display: flex;
+  width: 60px;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 90px;
+  button{
+    margin-top: 20px;
+  }
+}
+.editable-cell-value-wrap {
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+//.editable-row:hover .editable-cell-value-wrap {
+//  padding: 4px 11px;
+//  border: 1px solid #d9d9d9;
+//  border-radius: 2px;
+//}
+.editable-row .editable-cell-value-wrap:hover {
+  padding: 4px 11px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+
+[data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
+  border: 1px solid #434343;
+}
+.Body{
+  flex: 1;
+  box-sizing: border-box;
+  width: 100%;
+  //height: calc(90vh - px2rem(50));
+  //padding:0 px2rem(20) px2rem(100) px2rem(20);
+  //box-sizing: border-box;
+  //background: url(../../assets/images/loading.gif) no-repeat center center;
+  //background-size: px2rem(30) px2rem(30);
+  .iframe {
+    border: 0;
+  }
+}
